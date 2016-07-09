@@ -10,15 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var CourseComponent = (function () {
-    function CourseComponent(parameters) {
+    function CourseComponent() {
     }
     CourseComponent = __decorate([
         core_1.Component({
-            selector: 'course',
             moduleId: module.id,
-            templateUrl: './course.component.html'
+            selector: 'course',
+            templateUrl: 'course.component.html'
         }), 
-        __metadata('design:paramtypes', [Object])
+        __metadata('design:paramtypes', [])
     ], CourseComponent);
     return CourseComponent;
 }());
