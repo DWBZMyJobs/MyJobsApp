@@ -8,29 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
+var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of Heroes!';
-        this.hero = {
-            id: 1,
-            name: 'Windostorm'
-        };
+        this.testArray = ["TEst1", "TEst2"];
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n        <h2>{{hero.name}} details!</h2>\n        <div><label>Id: </label>{{hero.id}}</div>\n        <div><label>Name: </label>{{hero.name}}</div>\n    ",
+            template: "\n        <h1>My First Angular 2 App</h1>\n        <h2>TEst</h2>\n        <ul>\n            <li *ngFor=\"let test of testArray\">\n                {{test}}\n            </li>\n        </ul>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-var Hero = (function () {
-    function Hero() {
-    }
-    return Hero;
-}());
-exports.Hero = Hero;
 //# sourceMappingURL=app.component.js.map

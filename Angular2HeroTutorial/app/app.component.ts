@@ -1,23 +1,17 @@
-import {Component} from 'angular2/core'
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
     template: `
-        <h1>{{title}}</h1>
-        <h2>{{hero.name}} details!</h2>
-        <div><label>Id: </label>{{hero.id}}</div>
-        <div><label>Name: </label>{{hero.name}}</div>
-    `,
+        <h1>My First Angular 2 App</h1>
+        <h2>TEst</h2>
+        <ul>
+            <li *ngFor="let test of testArray">
+                {{test}}
+            </li>
+        </ul>
+    `
 })
 export class AppComponent { 
-    title = 'Tour of Heroes!';
-    hero: Hero = {
-        id:1,
-        name:'Windostorm'
-    };
-}
-
-export class Hero{
-    id: number;
-    name: string;
+    public testArray = ["TEst1", "TEst2"];
 }
